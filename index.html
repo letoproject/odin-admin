@@ -7,32 +7,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="main-container">
+  <main class="container">
     <section class="sidebar">
       <div class="sidebar_logo">
-        <img src="" alt="logo">
-        <a href="/">Dashboard</a>
+        <a href="/"> <img class="icon" src="./icons/view-dashboard.svg" alt="logo" width="50px">
+          Dashboard
+        </a>
       </div>
       <div class="sidebar_nav">
         <ul class="sidebar_list">
-          <li class="list_item">Home</li>
-          <li class="list_item">Profile</li>
-          <li class="list_item">Messages</li>
-          <li class="list_item">History</li>
-          <li class="list_item">Tasks</li>
-          <li class="list_item">Communities</li>
+          <li class="list_item"><a href="/"><img class="icon" src="./icons/home.svg" alt="home icon" width="24px">Home</a></li>
+          <li class="list_item"><a href="/"><img class="icon" src="./icons/account-box.svg" alt="" width="24px">Profile</a></li>
+          <li class="list_item"><a href="/"><img class="icon" src="./icons/message.svg" alt="" width="24px">Messages</a></li>
+          <li class="list_item"><a href="/"><img class="icon" src="./icons/history.svg" alt="" width="24px">History</a></li>
+          <li class="list_item"><a href="/"><img class="icon" src="./icons/calendar-check.svg" alt="" width="24px">Tasks</a></li>
+          <li class="list_item"><a href="/"><img class="icon" src="./icons/account-group.svg" alt="" width="24px">Communities</a></li>
         </ul>
       </div>
       <div class="sidebar_sup">
         <ul class="sidebar_list">
-          <li class="list_item">Settings</li>
-          <li class="list_item">Support</li>
-          <li class="list_item">Privacy</li>
+          <li class="list_item"><a href="/"><img class="icon" src="./icons/cog.svg" alt="" width="24px">Settings</a></li>
+          <li class="list_item"><a href="/"><img class="icon" src="./icons/help-box.svg" alt="" width="24px">Support</a></li>
+          <li class="list_item"><a href="/"><img class="icon" src="./icons/shield-check.svg" alt="" width="24px">Privacy</a></li>
         </ul>
       </div>
     </section>
     <section class="header">
       <div class="search">
+        <button>Search</button>
         <input type="text">
       </div>
       <div class="user-main">
@@ -44,11 +46,11 @@
         <img src="/" alt="side-avatar">
         <h2>User Name</h2>
       </div>
-      <div class="header-nav">
-        <ul class="header_list">
-          <li class="list_button">New</li>
-          <li class="list_button">Upload</li>
-          <li class="list_button">Share</li>
+      <div class="header_buttons">
+        <ul class="header_buttons-list">
+          <li class="item_button"><button>New</button></li>
+          <li class="item_button"><button>Upload</button></li>
+          <li class="item_button"><button>Share</button></li>
         </ul>
       </div>
     </section>
