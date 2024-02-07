@@ -16,7 +16,7 @@
 
 body {
 font-family: 'Roboto', sans-serif;
-height: 100vh;
+overflow-y: hidden;
 }
 
 li {
@@ -46,7 +46,7 @@ button {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 20% 80%;
 }
 
 /* / SIDE / */
@@ -85,13 +85,8 @@ button {
   align-items: center;
   position: relative;
   color: var(--white);
-  transform: scale(1);
-  transition: transform 250ms ease-in-out ;
 }
 
-.list_item > a:hover {
-      transform: scale(1.1)
-}
 
 .list_item > a::after {
   content: '';
@@ -101,17 +96,17 @@ button {
     height: 2px;
     bottom: 0;
     left: 8px;
-    background-color: var(--main-bgc);
+    background-color: var(--accent);
     transform-origin: bottom right;
-    transition: transform 250ms ease-out;
+    transition: transform 250ms ease-in-out;
 }
 
 .list_item > a:hover::after {
   
-  transform:  scaleX(1);;
+  transform:  scaleX(1);
   transform-origin: bottom left;
   border-radius: 8px;
-  background-color: var(--accent);
+  background-color: var(--white);
 }
 
 /* / HEADER / */
@@ -206,7 +201,7 @@ button {
 
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 50% 50%;
 }
 
 .projects {
@@ -236,6 +231,10 @@ button {
   border-top-style: none;
 }
 
+.project-descr {
+  padding-bottom: 1rem;
+}
+
 .card-buttons {
   display: flex;
   gap: 1rem;
@@ -260,7 +259,7 @@ button {
 
 .announcements,
 .trending {
-  padding: 1rem;
+  padding: 1.5rem;
 
   > h2 {
       padding-bottom: 1rem;
@@ -268,7 +267,7 @@ button {
 }
 
  .announcements-card { 
-    padding: 2rem ;
+    padding: 1rem ;
   
     border-radius: 8px;
     background-color: #fff;
@@ -289,12 +288,8 @@ button {
  
 }
 
-.trending {
-
-}
-
 .trending-card {
-  padding: 2rem ;
+  padding: 1rem ;
   
   border-radius: 8px;
   background-color: #fff;
@@ -304,10 +299,15 @@ button {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom:.5rem;
   
   * p {
       font-size: 0.9rem;
     }
+}
+
+.trending-item_tag {
+  margin-bottom: .5rem;
 }
 
 .trending-pic-side {
