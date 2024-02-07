@@ -16,7 +16,7 @@
 
 body {
 font-family: 'Roboto', sans-serif;
-overflow-y: hidden;
+/* overflow-y: hidden; */
 }
 
 li {
@@ -44,6 +44,7 @@ button {
 }
 
 .container {
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 20% 80%;
@@ -205,11 +206,7 @@ button {
 }
 
 .projects {
-  padding: 1rem;
   grid-row: span 2;
-  >h2 {
-    padding-bottom: 1rem;
-  }
 }
 
 .projects-container {
@@ -257,11 +254,12 @@ button {
   width: 1.5rem;
 }
 
+.projects,
 .announcements,
 .trending {
-  padding: 1.5rem;
+  padding: 1rem;
 
-  > h2 {
+  > h3 {
       padding-bottom: 1rem;
     }
 }
@@ -293,6 +291,10 @@ button {
   
   border-radius: 8px;
   background-color: #fff;
+}
+
+.trending {
+  margin-top: 1rem;
 }
 
 .trending-item {
